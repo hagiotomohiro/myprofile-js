@@ -60,6 +60,7 @@ header {
     position: fixed;
     bottom: 38px;
     right: 20px;
+    z-index: 10;
   }
 
 /* メインビジュアル */
