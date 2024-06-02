@@ -10,31 +10,46 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
   </head>
   
   <body>
 
 <!-- タイトル、ナビゲーション -->
     <header>
-      <a class="myprofile" href="index.html">MyProfile</a>
+      <a class="myprofile btn-animation" href="index.html">MyProfile</a>
       <nav>
         <ul class="navi-list">
           <li>
-            <a href="index.html#about">About</a>
+            <a class="btn-animation" href="#about">About</a>
           </li>
           <li>
-            <a href="index.html#works">Works</a>
+            <a class="btn-animation" href="#works">Works</a>
           </li>
         </ul>
       </nav>
     </header>
 
     <main>
+
+<!-- TOPに戻るボタン -->
+    <a href="#" id="page-top" class="btn-animation">TOP</a>
+
       <article>
 <!-- メインビジュアル -->
-        <section class="main-visual">
-          <img src="images/main.png" alt="カメラ">
-        </section>
+        <div class="carousel">
+          <div>
+            <img src="images/main.png" alt="カメラ">
+          </div>
+          <div>
+            <img src="images/main2.png" alt="カメラの道具">
+          </div>
+          <div>
+            <img src="images/main3.png" alt="海をバックにしたカメラ">
+          </div>
+        </div>
 
 <!-- About -->
         <section id="about">
@@ -60,25 +75,34 @@
           <h2>Works</h2>
           <div class="works">
             <div>
-              <img src="images/works1.png" alt="新潟、日本海の写真">
+              <img class="btn-animation" src="images/works1.png" alt="新潟、日本海の写真">
               <p>新潟に訪れた際に、日本海の雄大さに魅了されて撮影した1枚</p>
             </div>
             <div class="center">
-              <img src="images/works2.png" alt="冠雪した御嶽山">
+              <img class="btn-animation" src="images/works2.png" alt="冠雪した御嶽山">
               <p>地元長野の木曽町から撮影した、冠雪した御嶽山</p>
             </div>
             <div>
-              <img src="images/works3.png" alt="京都の街並み">
+              <img class="btn-animation" src="images/works3.png" alt="京都の街並み">
               <p>京都で撮影した、明け方の古き良き日本の町並み</p>
             </div>
           </div>
         </section>
       </article>
 
+<!-- モーダル -->
+<div class="modal">
+  <img src="" alt="" class="big-img">
+  <spam class="close-btn">✖</spam>
+</div>
+
 <!-- フッター -->
       <footer>
         <p>&copy; MyProfile.All right reserved.</p>
       </footer>
     </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
